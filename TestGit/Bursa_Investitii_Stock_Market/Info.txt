@@ -1,0 +1,42 @@
+
+O sa avem nevoie de functiile generale OpenPosition si ClosePosition 
+
+SCP Strategie Back Testing 
+0.a Trebuie definita o constanta de profit acceptat la care se va inchide pozitia. Depinde si de timp [return risk timePassed]. Sau si mai bine aici punem o functie globala ! 
+0.b trebuie o lista globala cu pozitiile deschise 
+0.c globala cu taxele pe tranzactie si pe schimbul valutar pt celelalte monezi . Vezi in mt4 daca se afiseaza taxele pt pozitiile deschise 
+Pentru fiecare ticker primit trebuie vazut daca se intra in piata si daca se inchide una sau mai multe pozitii
+1. Intrare in piata - cumpararea contractului pt pereche . Si aici avem nevoie de o conditie (functie) care sa decida daca are sens sa activam strategia sau nu 
+2. Incheierea tranzactiei - inchiderea poziiei 
+2a. trebuie vazut la ce moment de timp se poate inchide pozitia. Se tine cont de vectorul profit minim. In functie de asta se calculeaza profitul. 
+
+
+Este f posibil ca sa existe multe oportunitati. Trebuie facuta baleierea istoricului si obtinerea unei matrici de probabilitati [return risk perioadaContractului]. In loc de perioada contractului am putea folosi returnAnual. 
+Deci parametrii functiei ar putea fi: 
+[ReturnAnualizat risk]
+
+Riscurile de pierdere ar fi iesirea din piata daca preturile evolueaza abrupt in directie opusa din cauza lipsei de fonduri. Aici ar trebui o alta constanta cu profitul practic realizat; In momentul cand trece mult timp si scadem sigur sub acest prag se incearca lichidarea pozitiei ! In felul asta putem limita riscul ! 
+
+SCP_ExploreOportunities - intra pe inregistrarile din trecut si calculeaza matricea [returnAnualizat risk] pentru aceasta strategie concreta !!! Asta va permite selectarea celor mai avantajoase oportunitati 
+
+
+Se pare ca cel mai bine ar fi sa tinem separat portofoliu - modul Eliberator. Avantajele ar fi :
+- iese imediat in evidenta daca sunt taxe ascunse 
+- verificarea propriilor calcule si a celor din portofoliu 
+- globalizarea strategiei 
+Ramane intrebarea care e cea mai buna implementare ? Obiectivele ar fi: 
+*** acces usor la market overview prin cat mai multi brockeri 
+*** implementarea deciziilor de strategie : (deschidere/inchidere pozitie) aici 
+Mai simplu pare ca modulul meu sa interogheze piata. Daca nu exista varianta asta va trebui ca mt4 sa apeleze un callback al modulului Eliberator. 
+
+
+Ar fi ideal sa incepem cu diferite tipuri de brickeri: discount broker, ecn brocker, etc
+
+
+TO DO: 
+ - de aflat daca se poate investi in All Wheter fund of Ray Dalio si cum ? 
+
+
+
+
+http://www.economicprinciples.org/
