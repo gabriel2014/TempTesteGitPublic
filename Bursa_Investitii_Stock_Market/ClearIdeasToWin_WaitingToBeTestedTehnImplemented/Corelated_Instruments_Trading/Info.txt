@@ -1,0 +1,48 @@
+
+
+VEZI statistica Low High pe zi !!! iti permite sa castigi o gramada de pips daca nu se da un ordin market !!! 
+
+
+
+
+Ideea pleaca de la arbitraj ! 
+
+Pretul ACELUIASI instrument financiar variaza diferit pe brokeri diferiti. Vindem/cumparam in acelasi timp. 
+
+Putem urmari si instrumente corelate. Ar trebui ca dupa o variatie relativ majora pe un instrument sa 
+apara si variatia pe instrumentele corelate. 
+
+Vezi daca exista functia de corelatie/cum se poate calcula in Matlab !!! 
+
+2. Vezi si video-ul. Foarte coerent. La sfarsitul zilei schimbarile din economie-> stocks, 
+commodities afecteaza moneda tarii respective !!! 
+
+
+Concret: 
+1. perechea NZDSGD - NZDUSD - corelatie 96.2% 
+ar trebui tranzactionat USDSGD - exista pe Interactive Brokers, ICMarkets
+de urmarit perechile 	NZDSGD - VantageFX 
+			NZDUSD - ICMarkets 
+
+2. NZDHKD - NZDSGD - corelatie 95,9% 
+de tranzactionat - HKDSGD - Oanda 
+de urmarit -	NZDHKD - pe Oanda
+		NZDSGD - Oanda 
+
+3. CHFZAR - GBPZAR - corelatie 95,4% 
+de tranzactionat GBPCHF - ICMarkets, Interactive Brokers 
+de urmarit - 	CHFZAR - Interactive Brokers 
+		GBPZAR - Interactive Brokers 
+
+4. USDMXN - USDINR - corelatie 95,4% 
+de tranzactionat MXNINR - 
+de urmarit - 	USDMXN - pe Interactive Brokers , AAAFx, Oanda 
+		USDINR - pe Oanda  
+
+5. CADSGD - NZDSGD - corelatie 94,7% 
+de tranzactionat - NZDCAD - ICMarkets, f multe vezi pe myFxBook 
+de urmarit 	CADSGD - VantageFX 
+		NZDSGD - VantageFX 
+
+
+

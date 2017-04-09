@@ -1,0 +1,16 @@
+
+
+Module distincte si necesare: 
+
+1. Parcurge Datele Istorice si in functie de un nou pret ne spune ce probabilitate de castig 
+	avem in timp cu mean reversion. AICI investim 
+2. In functie de datele istorice si un procent minim vizat de castig ne spune care ar fi pragul de la care 
+    pretul din piata devine viabil pentru mean reversion. Cum media nu se schimba decat la sfarsitul zilei 
+	putem avea o referinta pentru pret ca sa evitam calcule inutile 
+3. In functie si de datele pana la ziua curenta, dupa o investitie, trebuie luata decizia cand este cel 
+	mai bine sa vindem. AICI lichidam investitia 
+	
+	
+
+
+
