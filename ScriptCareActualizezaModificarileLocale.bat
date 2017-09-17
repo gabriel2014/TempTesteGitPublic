@@ -1,4 +1,5 @@
 rem Script-ul trebuie lansat din directorul proiectului git 
-"C:\Program Files\Git\git-cmd.exe" git add . 
-"C:\Program Files\Git\git-cmd.exe" git commit -m "actualizare date locale"
-"C:\Program Files\Git\git-cmd.exe" git push origin  
+SET PATH=%PATH%;C:\Program Files\Git\bin
+START /WAIT git add . 
+START /WAIT git -m "actualizare date locale"
+START /WAIT git push origin  
